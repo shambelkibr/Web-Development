@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object model</title>
+  </head>
+  <body>
+    <!-- selcting by id -->
+    <p id="message">Dom Example</p>
+    <!-- secting by name -->
+    <input type="radio" name="sex" id="male" value="male" />male
+    <input type="radio" name="sex" id="female" value="female" />female
+    <!-- selecting by clas -->
+    <h1 class="heading">Heading one</h1>
+    <h1 class="heading">Heading one</h1>
+    <h1 class="heading">Heading one</h1>
+    <div id="containers">
+      <h1 class="heading">Heading one</h1>
+      <h1 class="heading">Heading one</h1>
+    </div>
+    <script>
+      let msgg = document.getElementById("message");
+      console.log(msgg);
+      let selectbyname = document.getElementsByName("sex");
+      console.log(selectbyname);
+      //  secting Dom by class name
+      let heading = document.getElementsByClassName("heading");
+      console.log(heading);
+      //   selecting Dom by specifiy class name
+      let cont = document.getElementById("containers");
+      let insidecontainer = cont.getElementsByClassName("heading");
+      console.log(insidecontainer);
+    </script>
+  </body>
+</html>

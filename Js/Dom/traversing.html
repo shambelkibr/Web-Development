@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model Traversing</title>
+  </head>
+  <body>
+    <h1 class="heading" id="outcontainer">1 st Heading one</h1>
+    <h1 class="heading" id="outcontainer2">2 nd Heading one</h1>
+    <div class="container" id="container">
+      <h1 class="heading">3 rd Heading</h1>
+      <h1 class="heading">4 th heading</h1>
+    </div>
+    <script>
+      let H1 = document.querySelector(".heading");
+      console.log(H1);
+      let H2 = document.querySelectorAll(".heading");
+      console.log(H2);
+      let H3 = document.querySelector("#container");
+      H3.querySelectorAll(".heading");
+      console.log(H3);
+    </script>
+  </body>
+</html>
